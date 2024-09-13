@@ -1,1 +1,1 @@
-# BuzzChat---Messaging-Service-Project
+# BuzzChat-Messaging-Service-Project
