@@ -11,7 +11,7 @@ import Avatar from "../../../components/Avatar";
 import AvatarGroup from "../../../components/AvatarGroup";
 import useActiveList from "../../../hooks/useActiveList";
 import useOtherUser from "../../../hooks/useOtherUser";
-import ConfirmModal from "./ConfirmModal";
+
 
 interface ProfileDrawerProps {
   isOpen: boolean;
@@ -45,7 +45,7 @@ const ChatDrawer: React.FC<ProfileDrawerProps> = ({ isOpen, onClose, data }) => 
 
   return (
     <>
-      <ConfirmModal isOpen={confirmOpen} onClose={() => setConfirmOpen(false)} />
+     
       <Transition.Root show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={onClose}>
           <Transition.Child

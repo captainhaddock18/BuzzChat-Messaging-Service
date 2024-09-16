@@ -2,7 +2,7 @@
 
 import axios from "axios";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { HiPaperAirplane, HiPhoto } from "react-icons/hi2";
+import { HiPaperAirplane, HiPhoto, HiArrowRight } from "react-icons/hi2";
 
 import { CldUploadButton } from "next-cloudinary";
 
@@ -50,12 +50,12 @@ const Form = () => {
         gap-2 
         lg:gap-4 
         w-full
-        dark:bg-dusk
+        dark:bg-blue-900
         dark:border-lightgray
       "
     >
      
-      <form onSubmit={handleSubmit(onSubmit)} className="flex items-center gap-2 lg:gap-4 w-full">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex items-center gap-2 lg:gap-4 w-full dark:bg-blue-900">
         <MessageInput
           id="message"
           register={register}
@@ -68,13 +68,13 @@ const Form = () => {
           className="
             rounded-full 
             p-2 
-            bg-sky-500 
+            bg-red-500
             cursor-pointer 
-            hover:bg-sky-600 
+            hover:bg-red-900 
             transition
           "
         >
-          <HiPaperAirplane size={18} className="text-white" />
+          <HiArrowRight size={18} className="text-white" />
         </button>
       </form>
     </div>

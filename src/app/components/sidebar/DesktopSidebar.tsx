@@ -44,7 +44,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({ currentUser }) => {
                 
       "
       >
-        <nav className="mt-4 flex flex-col justify-between">
+        <nav className="mt-6 flex flex-col justify-between">
           <ul role="list" className="flex flex-col items-center space-y-1">
             {routes.map((item) => (
               <DesktopItem

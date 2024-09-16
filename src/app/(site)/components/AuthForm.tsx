@@ -50,9 +50,9 @@ const AuthForm = () => {
       signIn("credentials", { ...data, redirect: false })
         .then((callback) => {
           if (callback?.error) {
-            toast.error("Invalid credentials!");
+            alert("Invalid credentials!");
           } else if (callback?.ok) {
-            toast.success("Logged in!");
+            alert("Logged in!");
             router.push("/conversations");
           }
         })

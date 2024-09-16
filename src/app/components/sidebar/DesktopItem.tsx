@@ -18,6 +18,7 @@ const DesktopItem: React.FC<DesktopItemProps> = ({ label, href, icon: Icon, acti
   };
 
   return (
+    <div className="mt-2">
     <li onClick={handleClick} key={label}>
       <Link
         href={href}
@@ -34,7 +35,8 @@ const DesktopItem: React.FC<DesktopItemProps> = ({ label, href, icon: Icon, acti
             text-gray-500 
             hover:text-black 
             hover:bg-gray-100
-        
+            mt-10
+ 
             dark:hover:text-gray-100
                           
                 dark:text-gray-200
@@ -47,6 +49,8 @@ const DesktopItem: React.FC<DesktopItemProps> = ({ label, href, icon: Icon, acti
         <span className="sr-only">{label}</span>
       </Link>
     </li>
+    </div>
+
   );
 };
 
