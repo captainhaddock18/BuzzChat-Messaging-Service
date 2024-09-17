@@ -1,17 +1,15 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { HiChevronLeft } from "react-icons/hi";
-import { HiEllipsisHorizontal } from "react-icons/hi2";
+import { HiChevronLeft, HiUser } from "react-icons/hi";
+import { HiEllipsisHorizontal, HiUsers } from "react-icons/hi2";
 
 import useOtherUser from "@/app/hooks/useOtherUser";
 import { Conversation, User } from "@prisma/client";
 import Link from "next/link";
 
-import Avatar from "../../../components/Avatar";
-import AvatarGroup from "../../../components/AvatarGroup";
 
-import ChatDrawer from "./ChatDrawer";
+
 
 interface HeaderProps {
   conversation: Conversation & {
@@ -29,7 +27,6 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
 
   return (
     <>
-      <ChatDrawer data={conversation} isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />
       <div
         className="
         bg-white 
@@ -62,9 +59,9 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             <HiChevronLeft size={32} />
           </Link>
           {conversation.isGroup ? (
-            <AvatarGroup users={conversation.users} />
+            <HiUsers size={30}/>
           ) : (
-            <Avatar user={otherUser} />
+            <HiUser size={30} className="text-red-500"/>
           )}
 
           <div className="flex flex-col dark:text-gray-200">

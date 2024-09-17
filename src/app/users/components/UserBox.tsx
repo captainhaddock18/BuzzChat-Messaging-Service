@@ -7,8 +7,9 @@ import clsx from "clsx";
 import { User } from "@prisma/client";
 import { useRouter } from "next/navigation";
 
-import Avatar from "../../components/Avatar";
+
 import LoadingModal from "../../components/modals/LoadingModal";
+import { HiUser } from "react-icons/hi";
 
 interface UserBoxProps {
   data: User;
@@ -51,7 +52,7 @@ const UserBox: React.FC<UserBoxProps> = ({ data }) => {
       
         )}
       >
-        <Avatar  />
+        <HiUser size={30} />
         <div className="min-w-0 flex-1">
           <div className="focus:outline-none">
             <div className="flex justify-between items-center mb-1">

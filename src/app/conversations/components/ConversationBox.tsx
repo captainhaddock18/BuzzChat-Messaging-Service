@@ -6,11 +6,11 @@ import { useCallback, useMemo } from "react";
 import { format } from "date-fns";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import {HiUsers} from 'react-icons/hi2'
 
-import Avatar from "../../components/Avatar";
-import AvatarGroup from "../../components/AvatarGroup";
 import useOtherUser from "../../hooks/useOtherUser";
 import { FullConversationType } from "../../types";
+import { HiUser } from "react-icons/hi";
 
 interface ConversationBoxProps {
   data: FullConversationType;
@@ -62,13 +62,13 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({ data, selected }) => 
     <div
       onClick={handleClick}
       className={clsx(
-        `w-full relative flex items-center space-x-3 p-3 rounded-lg transition cursor-pointer`,
+        `w-full relative flex items-center space-x-3 p-3 rounded-lg transition cursor-pointer mb-1`,
         selected
           ? "bg-blue-100 dark:bg-red-500"
           : "hover:bg-blue-50 dark:hover:bg-red-400"
       )}
     >
-      {data.isGroup ? <AvatarGroup users={data.users} /> : <Avatar user={otherUser} />}
+      {data.isGroup ? <HiUsers size={30} /> : <HiUser size={30} />}
 
       <div className="min-w-0 flex-1">
         <div className="focus:outline-none">

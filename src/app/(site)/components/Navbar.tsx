@@ -1,12 +1,9 @@
 'use client';
 
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
+
+
 
 const Navbar = () => {
-  const [text, setText] = useState('');
-  const title = 'BuzzChat';
-  const speed = 150; // typing speed in milliseconds
 
 
   return (

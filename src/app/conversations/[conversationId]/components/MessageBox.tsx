@@ -7,9 +7,10 @@ import { format } from "date-fns";
 import { useSession } from "next-auth/react";
 import Image from "next/image";
 
-import Avatar from "../../../components/Avatar";
+
 import { FullMessageType } from "../../../types";
 import ImageModal from "./ImageModal";
+import { HiUser } from "react-icons/hi";
 
 interface MessageBoxProps {
   data: FullMessageType;
@@ -39,7 +40,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
     <div className={container}>
       {!isOwn && (
         <div className={avatar}>
-          <Avatar />
+          <HiUser size={30} />
         </div>
       )}
       <div className={body}>

@@ -77,7 +77,7 @@ const AuthForm = () => {
     <>
       {session?.status === "loading" && <LoadingModal />}
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10 dark:bg-blue-900 dark:border-2 dark:border-red-400">
+        <div className="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10 dark:bg-blue-800 dark:border-2 dark:border-red-400">
           <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
             {variant === "REGISTER" && (
               <Input disabled={isLoading} register={register} errors={errors} required id="name" label="Name" />
