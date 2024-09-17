@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Navbar from '../(site)/components/Navbar';
 
 export default function ChatPage() {
   const [userMessage, setUserMessage] = useState('');
@@ -40,7 +41,10 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-red-400">
+    <>
+       <Navbar/>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-red-400">
+      
       <h1 className="text-4xl font-bold text-blue-800 mb-6">ChatBot</h1>
       <div className="w-full max-w-md bg-white shadow-md rounded-lg p-6 border border-blue-300">
         <textarea
@@ -58,12 +62,14 @@ export default function ChatPage() {
       </div>
       {botResponse && (
         <div
-          className="mt-6 w-full max-w-md bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800"
+          className="mt-6 w-full max-w-md bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800 mb-6"
           dangerouslySetInnerHTML={{ __html: parseMarkdown(botResponse) }} // Set parsed HTML
         >
           {/* Render the parsed response */}
         </div>
       )}
     </div>
+    </>
+
   );
 }
