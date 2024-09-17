@@ -13,7 +13,7 @@ import GroupChatModal from "../../components/modals/GroupChatModal";
 import useConversation from "../../hooks/useConversation";
 import { pusherClient, pusherEvents } from "../../libs/pusher";
 import { FullConversationType } from "../../types";
-import ConversationBox from "./ConversationBox";
+import ConversationBox from "./Chat_element";
 
 interface ConversationListProps {
   initialItems: FullConversationType[];

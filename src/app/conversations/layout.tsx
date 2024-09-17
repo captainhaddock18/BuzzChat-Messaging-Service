@@ -1,7 +1,7 @@
 import getConversations from "../actions/getConversations";
 import getUsers from "../actions/getUsers";
 import Sidebar from "../components/sidebar/Sidebar";
-import ConversationList from "./components/ConversationList";
+import ConversationList from "./components/Chatslist";
 
 export default async function ConversationsLayout({ children }: { children: React.ReactNode }) {
   const conversations = await getConversations();

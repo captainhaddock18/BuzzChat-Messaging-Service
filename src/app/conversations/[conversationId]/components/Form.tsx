@@ -2,9 +2,8 @@
 
 import axios from "axios";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { HiPaperAirplane, HiPhoto, HiArrowRight } from "react-icons/hi2";
+import { HiArrowRight } from "react-icons/hi2";
 
-import { CldUploadButton } from "next-cloudinary";
 
 import useConversation from "../../../hooks/useConversation";
 import MessageInput from "./MessageInput";
@@ -31,12 +30,7 @@ const Form = () => {
     });
   };
 
-  const handleUpload = (result: any) => {
-    axios.post("/api/messages", {
-      image: result.info.secure_url,
-      conversationId: conversationId,
-    });
-  };
+
 
   return (
     <div

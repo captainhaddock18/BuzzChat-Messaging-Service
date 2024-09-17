@@ -5,7 +5,7 @@ import { useState } from "react";
 import { User } from "@prisma/client";
 
 import useRoutes from "../../hooks/useRoutes";
-import ThemeToggle from "../theme/ThemeToggle";
+
 import DesktopItem from "./DesktopItem";
 import ProfileItem from "./ProfileItem";
 
