@@ -42,7 +42,7 @@ const AuthForm = () => {
     if (variant === "REGISTER") {
       axios.post("/api/register", data)
         .then(() => signIn("credentials", data))
-        .catch(() => toast.error("Something went wrong!"))
+        .catch(() => alert("Something went wrong!"))
         .finally(() => setIsLoading(false));
     }
 
@@ -76,8 +76,8 @@ const AuthForm = () => {
   return (
     <>
       {session?.status === "loading" && <LoadingModal />}
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white px-4 py-8 shadow sm:rounded-lg sm:px-10 dark:bg-blue-800 dark:border-2 dark:border-red-400">
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md ">
+        <div className="px-4 py-8 shadow sm:rounded-lg sm:px-10 bg-blue-800 border-2 border-red-400">
           <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
             {variant === "REGISTER" && (
               <Input disabled={isLoading} register={register} errors={errors} required id="name" label="Name" />
@@ -114,20 +114,21 @@ const AuthForm = () => {
           <div className="mt-6">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300 dark:border-red-400" />
+                <div className="w-full border-t  border-red-400" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="bg-white px-2 text-gray-500 dark:bg-blue-900 dark:text-gray-200">
+                <span className=" bg-blue-900 text-gray-200">
                   Or 
                 </span>
               </div>
             </div>
             <div className="mt-6 flex gap-2">
               <AuthSocialButton icon={BsGoogle} onClick={() => socialAction("google")} />
+                
             </div>
           </div>
-          <div className="mt-6 flex justify-center gap-2 px-2 text-sm text-gray-500 dark:text-gray-400">
-            <div onClick={toggleVariant} className="cursor-pointer underline text-blue-600 dark:text-red-400">
+          <div className="mt-6 flex justify-center gap-2 px-2 text-sm  text-gray-400">
+            <div onClick={toggleVariant} className="cursor-pointer underline  text-red-400">
               {variant === "LOGIN" ? "Create an account" : "Login"}
             </div>
           </div>

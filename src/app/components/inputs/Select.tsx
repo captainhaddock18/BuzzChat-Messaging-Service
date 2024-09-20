@@ -20,8 +20,8 @@ const Select: React.FC<SelectProps> = ({ label, value, onChange, options, disabl
           text-sm 
           font-medium 
           leading-6 
-          text-gray-900
-          dark:text-gray-200
+    
+          text-gray-200
         "
       >
         {label}
@@ -50,11 +50,11 @@ const Select: React.FC<SelectProps> = ({ label, value, onChange, options, disabl
               clsx(
                 `
                 text-sm 
-                dark:bg-lightgray 
-                dark:border-gray-500`,
+                bg-gray-700 
+                border-gray-500`,
                 state.isFocused && "border-gray-400"
               ),
-            menu: () => "dark:bg-lightgray",
+            menu: () => "bg-lightgray",
           }}
         />
       </div>

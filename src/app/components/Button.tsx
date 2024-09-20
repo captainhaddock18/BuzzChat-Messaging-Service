@@ -44,14 +44,14 @@ const Button: React.FC<ButtonProps> = ({
         
         // Secondary button (gray text)
         secondary
-          ? "text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
+          ? " text-white  bg-gray-800  hover:bg-gray-700"
           
           // Danger button (red theme)
           : danger
-          ? "bg-red-500 hover:bg-red-600 focus-visible:outline-red-600 dark:bg-red-700 dark:hover:bg-red-800"
+          ? "  focus-visible:outline-red-600 bg-red-700 hover:bg-red-800"
           
           // Default button (blue theme)
-          : "bg-blue-500 hover:bg-blue-600 focus-visible:outline-blue-600 dark:bg-red-500 dark:hover:bg-red-600 text-white"
+          : "  focus-visible:outline-blue-600 bg-red-500 hover:bg-red-600 text-white"
       )}
     >
       {children}

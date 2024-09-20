@@ -27,15 +27,12 @@ const AuthSocialButton: React.FC<AuthSocialButtonProps> = ({ icon: Icon, onClick
         focus:outline-offset-0
         text-white
         
-        // Light mode (white background with blue text)
-        bg-blue-500 
-        hover:bg-blue-600 
-        ring-blue-300 
+
         
         // Dark mode (red background with white text)
-        dark:bg-red-500 
-        dark:hover:bg-red-600 
-        dark:ring-red-300
+        bg-red-500 
+        hover:bg-red-600 
+        ring-red-300
       "
     >
       <Icon />

@@ -10,6 +10,6 @@ body,
 
 @layer base {
   body {
-    @apply dark:bg-blue-900;
+    @apply bg-blue-900;
   }
 }

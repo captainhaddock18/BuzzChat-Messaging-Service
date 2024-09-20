@@ -28,19 +28,18 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({ currentUser }) => {
         lg:w-20 
         xl:px-6
         lg:overflow-y-auto 
-        lg:bg-white 
+      
         lg:border-r-[1px]
         lg:pb-4
         lg:flex
         lg:flex-col
         justify-between
-                bg-blue-100 
-                text-blue-700 
+          
                 cursor-pointer 
-                hover:bg-blue-200 
+
                 transition
-                dark:bg-blue-900
-                dark:text-gray-200
+                bg-blue-900
+                text-gray-200
                 
       "
       >

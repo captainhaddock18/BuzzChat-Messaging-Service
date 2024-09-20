@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
     <>
       <div
         className="
-        bg-white 
+      
         w-full 
         flex 
         border-b-[1px] 
@@ -40,8 +40,8 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         justify-between 
         items-center 
         shadow-sm
-        dark:bg-blue-900
-        dark:border-lightgray
+        bg-blue-900
+        border-lightgray
       "
       >
         <div className="flex gap-3 items-center">
@@ -64,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             <HiUser size={30} className="text-red-500"/>
           )}
 
-          <div className="flex flex-col dark:text-gray-200">
+          <div className="flex flex-col text-gray-200">
             <div>{conversation.name || otherUser.name}</div>
          
           </div>

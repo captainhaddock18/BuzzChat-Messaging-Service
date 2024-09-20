@@ -36,9 +36,9 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
         lg:block
         overflow-y-auto 
         border-r 
-        border-gray-200
+        
         block w-full left-0
-        dark:border-lightgray
+        border-lightgray
       "
     >
       <div className="px-5">
@@ -48,8 +48,8 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
               mt-4
               text-2xl 
               font-bold 
-            text-blue-700 
-            dark:text-red-400
+             
+            text-red-400
             "
           >
             Users

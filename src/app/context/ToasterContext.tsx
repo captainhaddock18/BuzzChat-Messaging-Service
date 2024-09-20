@@ -6,7 +6,7 @@ const ToasterContext = () => {
   return (
     <Toaster
       toastOptions={{
-        className: "dark:bg-lightgray dark:text-gray-200",
+        className: "bg-lightgray text-gray-200",
       }}
     />
   );

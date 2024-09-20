@@ -96,28 +96,26 @@ const ConversationList: React.FC<ConversationListProps> = ({ initialItems, users
           lg:block
           overflow-y-auto 
           border-r 
-          border-gray-200 
-          dark:border-lightgray
+          border-lightgray
         `,
           isOpen ? "hidden" : "block w-full left-0"
         )}
       >
         <div className="px-5">
           <div className="flex justify-between mb-4 pt-4">
-            <div className="text-2xl font-bold text-blue-700 dark:text-red-400">Chats</div>
+            <div className="text-2xl font-bold text-red-400">Chats</div>
             <div
               onClick={() => setIsModalOpen(true)}
               className="
                 rounded-full 
                 p-2 
-                bg-blue-100 
-                text-blue-700 
+          
                 cursor-pointer 
-                hover:bg-blue-200 
+              
                 transition
-                dark:bg-red-400
-                dark:text-gray-200
-                dark:hover:bg-red-500
+                bg-red-400
+                text-gray-200
+                hover:bg-red-500
               "
             >
               <MdGroups3 size={20} />

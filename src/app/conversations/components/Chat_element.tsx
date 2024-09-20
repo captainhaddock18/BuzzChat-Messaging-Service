@@ -64,8 +64,8 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({ data, selected }) => 
       className={clsx(
         `w-full relative flex items-center space-x-3 p-3 rounded-lg transition cursor-pointer mb-1`,
         selected
-          ? "bg-blue-100 dark:bg-red-500"
-          : "hover:bg-blue-50 dark:hover:bg-red-400"
+          ? " bg-red-500"
+          : " hover:bg-red-400"
       )}
     >
       {data.isGroup ? <HiUsers size={30} /> : <HiUser size={30} />}
@@ -74,7 +74,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({ data, selected }) => 
         <div className="focus:outline-none">
           <span className="absolute inset-0" aria-hidden="true" />
           <div className="flex justify-between items-center mb-1">
-            <p className="text-md font-medium text-blue-700 dark:text-red-100">
+            <p className="text-md font-medium  text-red-100">
               {data.name || otherUser.name}
             </p>
     
@@ -83,8 +83,8 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({ data, selected }) => 
             className={clsx(
               `truncate text-sm`,
               hasSeen
-                ? "text-gray-500 dark:text-gray-400"
-                : "text-blue-700 dark:text-red-300 font-medium"
+                ? " text-gray-400"
+                : " text-red-300 font-medium"
             )}
           >
             {lastMessageText}

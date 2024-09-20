@@ -37,19 +37,19 @@ const Form = () => {
       className="
         py-4 
         px-4 
-        bg-white 
+        
         border-t 
         flex 
         items-center 
         gap-2 
         lg:gap-4 
         w-full
-        dark:bg-blue-900
-        dark:border-lightgray
+        bg-blue-900
+        border-lightgray
       "
     >
      
-      <form onSubmit={handleSubmit(onSubmit)} className="flex items-center gap-2 lg:gap-4 w-full dark:bg-blue-900">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex items-center gap-2 lg:gap-4 w-full bg-blue-900">
         <MessageInput
           id="message"
           register={register}

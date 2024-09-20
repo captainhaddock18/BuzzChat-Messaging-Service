@@ -94,13 +94,12 @@ export const DarkModeSwitch: React.FC<Props> = ({
         h-10
         rounded-full 
         p-2 
-        bg-gray-100 
-        text-gray-600 
+     
         cursor-pointer 
         hover:opacity-75 
         transition
-        dark:bg-lightgray
-        dark:text-gray-200
+        bg-lightgray
+        text-gray-200
       "
     >
       <animated.svg

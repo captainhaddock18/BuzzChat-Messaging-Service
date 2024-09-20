@@ -50,7 +50,7 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose, users 
         router.refresh();
         onClose();
       })
-      .catch(() => toast.error("Something went wrong!"))
+      .catch(() => alert("Something went wrong! Try Again!"))
       .finally(() => setIsLoading(false));
   };
 
@@ -63,14 +63,13 @@ const GroupChatModal: React.FC<GroupChatModalProps> = ({ isOpen, onClose, users 
               className="
                 text-base 
                 font-semibold 
-                leading-7 
-                text-gray-900
-                dark:text-gray-200
+      
+                text-gray-200
               "
             >
               Create a group chat
             </h2>
-            <p className="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-300">
+            <p className="mt-1 text-sm leading-6  text-gray-300">
               Create a chat with more than 2 people.
             </p>
             <div className="mt-10 flex flex-col gap-y-8">
