@@ -18,7 +18,7 @@ const Navbar = () => {
         <div>
     
             <a href="/chat" className="text-white hover:text-gray-300 px-4">Chat Feed</a>
-            <a href="/chatbot" className='text-white hover:text-gray-300 px-4'>Chatbot</a>
+            <a href="/chatbot" className='text-white hover:text-gray-300 px-4'>PartnerBot</a>
       
         
        

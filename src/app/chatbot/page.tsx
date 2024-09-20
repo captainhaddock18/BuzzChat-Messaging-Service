@@ -46,7 +46,8 @@ export default function ChatPage() {
        <Navbar/>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-red-400">
       
-      <h1 className="text-4xl font-bold text-white mb-6">ChatBot</h1>
+      <h1 className="text-4xl font-bold text-white mb-6">PartnerBot</h1>
+      <p>Introducing PartnerBot - Your Chatbot friend!</p>
       <div className="w-full max-w-md bg-blue-800 shadow-md rounded-lg p-6 border border-blue-300">
         <textarea
           value={userMessage}
@@ -63,11 +64,12 @@ export default function ChatPage() {
       </div>
       {botResponse && (
         <div
-          className="mt-6 w-full max-w-md bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800 mb-6"
-          dangerouslySetInnerHTML={{ __html: parseMarkdown(botResponse) }} // Set parsed HTML
-        >
-          {/* Render the parsed response */}
-        </div>
+  className="mt-6 w-full w-[1000px] bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800 mb-6"
+  dangerouslySetInnerHTML={{ __html: parseMarkdown(botResponse) }} // Set parsed HTML
+>
+  {/* Render the parsed response */}
+</div>
+
       )}
     </div>
     </>
