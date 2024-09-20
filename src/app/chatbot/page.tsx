@@ -64,7 +64,7 @@ export default function ChatPage() {
       </div>
       {botResponse && (
         <div
-  className="mt-6 w-full w-[1000px] bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800 mb-6"
+  className="mt-6 m-5 w-[1000px] bg-blue-100 border border-blue-200 rounded-lg p-4 text-blue-800 mb-6 "
   dangerouslySetInnerHTML={{ __html: parseMarkdown(botResponse) }} // Set parsed HTML
 >
   {/* Render the parsed response */}
