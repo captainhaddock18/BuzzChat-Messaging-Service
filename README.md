@@ -24,7 +24,7 @@ BuzzChat is a user-friendly messaging application designed for real-time communi
 ## Local Setup Instructions
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/captainhaddock18/Buzzchat-Messaging-Service>
 2. **Set Up MongoDB, Pusher, and Google OAuth**
 MongoDB Setup:
       Set up a MongoDB database:
