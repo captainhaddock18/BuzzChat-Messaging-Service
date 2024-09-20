@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { HiChat } from "react-icons/hi";
-import { HiArrowLeftOnRectangle,HiHome, HiArrowLeftCircle, HiUser,HiChatBubbleLeftRight } from "react-icons/hi2";
+import { HiArrowLeftOnRectangle,HiHome, HiFaceSmile,HiArrowLeftCircle, HiUser,HiChatBubbleLeftRight } from "react-icons/hi2";
 
 import { signOut } from "next-auth/react";
 import { usePathname } from "next/navigation";
@@ -30,6 +30,12 @@ const useRoutes = () => {
         href: "/users",
         icon: HiUser,
         active: pathname === "/users",
+      },
+      {
+        label: "PartnerBot",
+        href: "/chatbot",
+        icon: HiFaceSmile,
+        active: pathname === "/chatbot",
       },
       {
         label: "Logout",
