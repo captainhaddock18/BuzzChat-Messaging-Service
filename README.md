@@ -26,33 +26,34 @@ BuzzChat is a user-friendly messaging application designed for real-time communi
    ```bash
    git clone <https://github.com/captainhaddock18/Buzzchat-Messaging-Service>
 2. **Set Up MongoDB, Pusher, and Google OAuth**
-MongoDB Setup:
+- MongoDB Setup:
       Set up a MongoDB database:
-      If using MongoDB Atlas, create a free cluster and get the connection string.
+      If using MongoDB Atlas, create a free cluster and Note the connection string as DATABASE_URL.
       If running MongoDB locally, make sure MongoDB is running and accessible.
-Pusher Setup:
+- Pusher Setup:
       Sign up for a Pusher account.
       Create a new app in the Pusher dashboard.
       Note down the following credentials: APP_ID, APP_KEY, APP_SECRET, and CLUSTER.
-Google OAuth Setup:
+- Google OAuth Setup:
       Go to the Google Cloud Console.
       Create a new project and set up OAuth 2.0 credentials:
       Client ID
       Client Secret
+  
       
 Step 3: Set Up Environment Variables
-Create a .env.local file in the root of the project and add these environment variables: 
+- Create a .env.local file in the root of the project and add these environment variables: 
 GEMINI_API_KEY,GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, DATABASE_URL, NEXTAUTH_SECRET, NEXTAUTH_URL, NEXT_PUBLIC_PUSHER_APP_KEY, NEXT_PUBLIC_PUSHER_CLUSTER. PUSHER_APP_ID, PUSHER_SECRET
-
+- NEXTAUTH_URL = http://localhost:3020/
 ## Install Dependencies
-   Once all environment variables are configured, install the necessary dependencies using Yarn:
+- Once all environment variables are configured, install the necessary dependencies using Yarn:
    yarn install
-If you prefer npm, run:
+- If you prefer npm, run:
    npm install
-Run this command: npx prisma db push
+- Run this command: npx prisma db push
 
 ## Development Server
-Start the development server by running the following command:
+- Start the development server by running the following command:
 npm run dev
 
 ## Open the Application on Browser 
